@@ -1,0 +1,13 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: prod
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    steps:
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: go-repo
+          artifact-id: 8f988771-c3c6-4592-b632-c5f3d4391422
+          target-environment: Automation QA

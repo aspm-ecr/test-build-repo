@@ -9,5 +9,5 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: go-repo
-          artifact-id: 8f988771-c3c6-4592-b632-c5f3d4391422
+          artifact-id: 9777b659-0ae0-4ae1-9e92-6843421524cb
           target-environment: Automation QA
